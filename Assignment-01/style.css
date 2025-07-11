@@ -81,11 +81,11 @@ nav{
     justify-content: center;
     gap: 10vw;
     align-items: center;
-    padding: 5vw 0;
+    padding: 5vw 2vw;
 }
 
 .text-action{
-    width: 55%;
+    width: 75%;
 }
 
 .action .wrapper .left .text-action h1{
@@ -94,7 +94,7 @@ nav{
     font-family: var(--main-font);
 }
 .text-action p{
-    font-size: 20px;
+    font-size: 27px;
     font-weight: 300;
     color: var(--light-color);
      font-family: var(--main-font);
@@ -126,7 +126,7 @@ nav{
     align-items: center;
     flex-direction: column;
     background: rgba(78, 71, 255, 0.1);
-    width: 70%;
+    width: 80%;
     padding: 50px 80px;
     border-radius: 25px;
 }
@@ -269,6 +269,7 @@ textarea {
   font-size: 14px;
   background-color: white;
   outline: none;
+  font-family: var(--inter-font);
 }
 
 textarea {
@@ -309,7 +310,7 @@ footer .wrapper{
 footer .wrapper .lgoo{
     font-size: 100px;
     color: var(--primary-color);
-    font-weight: 800;
+    font-weight: 900;
      font-family: var(--main-font);
 }
 
@@ -332,4 +333,9 @@ footer .wrapper .links a{
     text-decoration: none;
     color: var(--light-color);
     font-size: 20px;
+    transition:  .9s;
+}
+
+footer .wrapper .links a:hover{
+    color: var(--primary-color);
 }
