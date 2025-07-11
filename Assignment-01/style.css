@@ -1,11 +1,27 @@
 :root{
     --primary-color: #4E47FF;
 }
+*{
 
-.main{
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+nav{
+    position: relative;
+    width: 100vw;
+}
+
+.navbar{
     display: flex;
     justify-content: space-between;
-    margin: 3vw 8vw 3vw 8vw;
+    padding: 3vw 5vw;
+    position: absolute;
+    width: 100%;
 }
 .logo{
     font-size: 34px;
@@ -19,4 +35,25 @@
     border-radius: 10px;
     border: none;
     color: #FFFF;
+    cursor: pointer;
+}
+.hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("Assets/Hero-bg.png");
+}
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 36px;
+}
+.heading{
+    font-size: 67px;
+    font-weight: bold;
+    color: #252432;
+    text-align: center;
 }
