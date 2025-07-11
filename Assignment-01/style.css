@@ -135,6 +135,60 @@ nav{
 }
 .dat span{
      font-size: 20px;
-   
-     
+}
+
+.review{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5vw 0;
+}
+.review h1{
+    font-size: 42px;
+    font-weight: bold;
+}
+
+.review .wrapper {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.review-card{
+    background: #FFFF;
+    padding: 24px;
+    width: 25%;
+    border-radius: 14px;
+}
+.user-data{
+    display: flex;
+    gap: 1vw;
+    /* justify-content: center; */
+    align-items: center;
+}
+.dp img{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+}
+.user-data .info{
+    display: flex;
+    flex-direction: column;
+}
+
+.info span:nth-of-type(1){
+    font-size: 20px;
+    color: #757575;
+}
+.info span:nth-of-type(2){
+    font-size: 18px;
+    color: #B3B3B3;
+}
+
+.review-card .text h2{
+    font-size: 30px;
+}
+
+.review-card .text p{
+    font-size: 17px;
 }
