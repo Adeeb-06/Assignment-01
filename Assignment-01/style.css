@@ -1,5 +1,6 @@
 :root{
     --primary-color: #4E47FF;
+    --light-color:#B3B3B3;
 }
 *{
 
@@ -60,29 +61,44 @@ nav{
 }
 
 .action{
-    margin: 30px;
+    /* margin: 30px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: #000; */
+    
 }
 
 .action .wrapper{
+    /* background: red; */
+    width: 90%;
     display: flex;
     justify-content: center;
-    gap: 3vw;
+    gap: 10vw;
     align-items: center;
     padding: 5vw 0;
-    width: 100vw;
 }
+
+/* .action .wrapper .left{
+    background: yellow;
+}
+.action .wrapper .right{
+    background: cyan;
+    width: 50%;
+} */
 
 .text-action{
-    width: 65%;
+    width: 55%;
 }
 
-.text-action h1{
+.action .wrapper .left .text-action h1{
     font-size: 42px;
     font-weight: bold;
 }
 .text-action p{
-    font-size: 28px;
+    font-size: 20px;
     font-weight: 100;
+    color: var(--light-color);
 }
 
 .right img{
@@ -191,4 +207,119 @@ nav{
 
 .review-card .text p{
     font-size: 17px;
+}
+
+.form{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    padding: 5vw 0;
+}
+
+.container {
+  display: flex;
+  background-color: #f5f8ff;
+  /* padding: 40px; */
+  justify-content: space-evenly;
+  gap: 10vw;
+  align-items: flex-start;
+}
+
+.container .left{
+    width: 55%;
+}
+.container .right{
+    width: 45%;
+}
+
+.container .left h1 {
+  font-size: 100px;
+  font-weight: 700;
+  color: #000;
+  line-height: 1.2;
+}
+
+.container .right form {
+  display: flex;
+  flex-direction: column;
+  /* width: 300px; */
+}
+
+label {
+  margin: 10px 0 5px;
+  font-size: 14px;
+  color: #333;
+}
+
+input,
+textarea {
+
+  width: 497px;  
+  height: 50px;
+  padding: 20px 26px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  background-color: white;
+  outline: none;
+}
+
+textarea {
+  resize: none;
+  height: 167px;
+}
+
+button {
+  margin-top: 20px;
+  padding: 14px;
+  background-color: #4e47ff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #3d38e0;
+}
+
+footer{
+    padding: 5vw 0;
+    background: #FFF;
+}
+
+footer .wrapper{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: .7vw;
+}
+
+footer .wrapper .lgoo{
+    font-size: 100px;
+    color: var(--primary-color);
+    font-weight: bolder;
+}
+
+footer .wrapper .text{
+    font-size: 20px;
+    text-align: center;
+    width: 40%;
+    color: var(--light-color);
+}
+
+footer .wrapper .links{
+    display: flex;
+    gap: 3vw;
+    padding-top: 20px;
+}
+
+footer .wrapper .links a{
+    text-decoration: none;
+    color: var(--light-color);
+    font-size: 20px;
 }
