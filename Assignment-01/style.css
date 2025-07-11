@@ -9,6 +9,7 @@
 html, body {
     height: 100%;
     margin: 0;
+    background: #F5F8FF;
 }
 
 nav{
@@ -44,7 +45,7 @@ nav{
     height: 100vh;
     background-image: url("Assets/Hero-bg.png");
 }
-.wrapper{
+.hero .wrapper{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -56,4 +57,84 @@ nav{
     font-weight: bold;
     color: #252432;
     text-align: center;
+}
+
+.action{
+    margin: 30px;
+}
+
+.action .wrapper{
+    display: flex;
+    justify-content: center;
+    gap: 3vw;
+    align-items: center;
+    padding: 5vw 0;
+    width: 100vw;
+}
+
+.text-action{
+    width: 65%;
+}
+
+.text-action h1{
+    font-size: 42px;
+    font-weight: bold;
+}
+.text-action p{
+    font-size: 28px;
+    font-weight: 100;
+}
+
+.right img{
+    height: 328px;
+    width: 403px;
+    border-radius: 48px;
+    
+}
+
+.datas{
+    display: flex;
+    gap: 10vw;
+}
+
+.banner{
+    display: flex;
+    justify-content: center;
+    padding: 5vw 0;
+
+}
+
+
+.banner .wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgba(78, 71, 255, 0.1);
+    width: 70%;
+    padding: 50px 80px;
+    border-radius: 25px;
+}
+
+.banner .wrapper h1{
+    font-size: 38px ;
+}
+
+
+.datas .dat{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    opacity: 100%;
+}
+
+.dat div{
+    font-size: 80px;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+.dat span{
+     font-size: 20px;
+   
+     
 }
